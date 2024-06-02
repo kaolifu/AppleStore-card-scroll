@@ -1,0 +1,60 @@
+#items {
+  display: flex;
+  gap: 24px;
+  width: 100vw;
+  overflow-x: scroll;
+  // border: solid 1px red;
+  scroll-behavior:smooth;
+  /* 启用平滑滚动效果 */
+  // transition:5s;
+  /* 使用transition来增加滚动的过渡效果，设置持续时间为0.5秒 */
+  .first{
+    min-width: calc(10vw - 24px);
+    // background-color: red;
+  }
+}
+
+.item {
+  min-width: 400px;
+  height: 500px;
+  // background-image: url('../img/store-card/store-card-40-ipad-pro-202405.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 28px;
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h3 {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.fontwhite {
+  color: white;
+}
+
+.fontblack {
+  color: black;
+
+  h4 {
+    color: #888;
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: 400;
+  }
+}
